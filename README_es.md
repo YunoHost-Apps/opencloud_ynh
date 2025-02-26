@@ -24,7 +24,7 @@ OpenCloud is the new file sync & share platform that will be the foundation of y
 
 ## Capturas
 
-![Captura de OpenCloud](./doc/screenshots/screenshot.png)
+![Captura de OpenCloud](./doc/screenshots/screenshot.jpg)
 
 ## Documentaciones y recursos
 

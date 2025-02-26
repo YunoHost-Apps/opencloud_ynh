@@ -24,7 +24,7 @@ OpenCloud is the new file sync & share platform that will be the foundation of y
 
 ## 截图
 
-![OpenCloud 的截图](./doc/screenshots/screenshot.png)
+![OpenCloud 的截图](./doc/screenshots/screenshot.jpg)
 
 ## 文档与资源
 

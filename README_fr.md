@@ -25,7 +25,7 @@ OpenCloud est la nouvelle plateforme de synchronisation et de partage de fichier
 
 ## Captures d’écran
 
-![Capture d’écran de OpenCloud](./doc/screenshots/screenshot.png)
+![Capture d’écran de OpenCloud](./doc/screenshots/screenshot.jpg)
 
 ## Documentations et ressources
 
