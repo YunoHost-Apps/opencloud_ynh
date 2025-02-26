@@ -3,49 +3,46 @@ Este archivo README esta generado automaticamente<https://github.com/YunoHost/ap
 No se debe editar a mano.
 -->
 
-# ownCloud para Yunohost
+# OpenCloud para Yunohost
 
-[![Nivel de integración](https://apps.yunohost.org/badge/integration/owncloud)](https://ci-apps.yunohost.org/ci/apps/owncloud/)
-![Estado funcional](https://apps.yunohost.org/badge/state/owncloud)
-![Estado En Mantención](https://apps.yunohost.org/badge/maintained/owncloud)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/opencloud)](https://ci-apps.yunohost.org/ci/apps/opencloud/)
+![Estado funcional](https://apps.yunohost.org/badge/state/opencloud)
+![Estado En Mantención](https://apps.yunohost.org/badge/maintained/opencloud)
 
-[![Instalar ownCloud con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=owncloud)
+[![Instalar OpenCloud con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=opencloud)
 
 *[Leer este README en otros idiomas.](./ALL_README.md)*
 
-> *Este paquete le permite instalarownCloud rapidamente y simplement en un servidor YunoHost.*  
+> *Este paquete le permite instalarOpenCloud rapidamente y simplement en un servidor YunoHost.*  
 > *Si no tiene YunoHost, visita [the guide](https://yunohost.org/install) para aprender como instalarla.*
 
 ## Descripción general
 
-ownCloud Infinite Scale (oCIS) is the new file sync & share platform that will be the foundation of your data management platform.
+OpenCloud is the new file sync & share platform that will be the foundation of your data management platform.
 
-**Versión actual:** 7.1.0~ynh1
-
-**Demo:** <https://ocis.owncloud.com/>
+**Versión actual:** 1.0.0~ynh1
 
 ## Capturas
 
-![Captura de ownCloud](./doc/screenshots/screenshot.png)
+![Captura de OpenCloud](./doc/screenshots/screenshot.png)
 
 ## Documentaciones y recursos
 
-- Sitio web oficial: <https://owncloud.com>
-- Documentación administrador oficial: <https://doc.owncloud.com/ocis/next/>
-- Repositorio del código fuente oficial de la aplicación : <https://github.com/owncloud/ocis>
-- Catálogo YunoHost: <https://apps.yunohost.org/app/owncloud>
-- Reportar un error: <https://github.com/YunoHost-Apps/owncloud_ynh/issues>
+- Sitio web oficial: <https://opencloud.eu/en>
+- Repositorio del código fuente oficial de la aplicación : <https://github.com/opencloud-eu/opencloud>
+- Catálogo YunoHost: <https://apps.yunohost.org/app/opencloud>
+- Reportar un error: <https://github.com/YunoHost-Apps/opencloud_ynh/issues>
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/owncloud_ynh/tree/testing).
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/opencloud_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 
 ```bash
-sudo yunohost app install https://github.com/YunoHost-Apps/owncloud_ynh/tree/testing --debug
+sudo yunohost app install https://github.com/YunoHost-Apps/opencloud_ynh/tree/testing --debug
 o
-sudo yunohost app upgrade owncloud -u https://github.com/YunoHost-Apps/owncloud_ynh/tree/testing --debug
+sudo yunohost app upgrade opencloud -u https://github.com/YunoHost-Apps/opencloud_ynh/tree/testing --debug
 ```
 
 **Mas informaciones sobre el empaquetado de aplicaciones:** <https://yunohost.org/packaging_apps>

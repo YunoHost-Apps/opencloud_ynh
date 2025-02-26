@@ -3,49 +3,46 @@ N.B.: README ini dibuat secara otomatis oleh <https://github.com/YunoHost/apps/t
 Ini TIDAK boleh diedit dengan tangan.
 -->
 
-# ownCloud untuk YunoHost
+# OpenCloud untuk YunoHost
 
-[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/owncloud)](https://ci-apps.yunohost.org/ci/apps/owncloud/)
-![Status kerja](https://apps.yunohost.org/badge/state/owncloud)
-![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/owncloud)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/opencloud)](https://ci-apps.yunohost.org/ci/apps/opencloud/)
+![Status kerja](https://apps.yunohost.org/badge/state/opencloud)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/opencloud)
 
-[![Pasang ownCloud dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=owncloud)
+[![Pasang OpenCloud dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=opencloud)
 
 *[Baca README ini dengan bahasa yang lain.](./ALL_README.md)*
 
-> *Paket ini memperbolehkan Anda untuk memasang ownCloud secara cepat dan mudah pada server YunoHost.*  
+> *Paket ini memperbolehkan Anda untuk memasang OpenCloud secara cepat dan mudah pada server YunoHost.*  
 > *Bila Anda tidak mempunyai YunoHost, silakan berkonsultasi dengan [panduan](https://yunohost.org/install) untuk mempelajari bagaimana untuk memasangnya.*
 
 ## Ringkasan
 
-ownCloud Infinite Scale (oCIS) is the new file sync & share platform that will be the foundation of your data management platform.
+OpenCloud is the new file sync & share platform that will be the foundation of your data management platform.
 
-**Versi terkirim:** 7.1.0~ynh1
-
-**Demo:** <https://ocis.owncloud.com/>
+**Versi terkirim:** 1.0.0~ynh1
 
 ## Tangkapan Layar
 
-![Tangkapan Layar pada ownCloud](./doc/screenshots/screenshot.png)
+![Tangkapan Layar pada OpenCloud](./doc/screenshots/screenshot.png)
 
 ## Dokumentasi dan sumber daya
 
-- Website aplikasi resmi: <https://owncloud.com>
-- Dokumentasi admin resmi: <https://doc.owncloud.com/ocis/next/>
-- Depot kode aplikasi hulu: <https://github.com/owncloud/ocis>
-- Gudang YunoHost: <https://apps.yunohost.org/app/owncloud>
-- Laporkan bug: <https://github.com/YunoHost-Apps/owncloud_ynh/issues>
+- Website aplikasi resmi: <https://opencloud.eu/en>
+- Depot kode aplikasi hulu: <https://github.com/opencloud-eu/opencloud>
+- Gudang YunoHost: <https://apps.yunohost.org/app/opencloud>
+- Laporkan bug: <https://github.com/YunoHost-Apps/opencloud_ynh/issues>
 
 ## Info developer
 
-Silakan kirim pull request ke [`testing` branch](https://github.com/YunoHost-Apps/owncloud_ynh/tree/testing).
+Silakan kirim pull request ke [`testing` branch](https://github.com/YunoHost-Apps/opencloud_ynh/tree/testing).
 
 Untuk mencoba branch `testing`, silakan dilanjutkan seperti:
 
 ```bash
-sudo yunohost app install https://github.com/YunoHost-Apps/owncloud_ynh/tree/testing --debug
+sudo yunohost app install https://github.com/YunoHost-Apps/opencloud_ynh/tree/testing --debug
 atau
-sudo yunohost app upgrade owncloud -u https://github.com/YunoHost-Apps/owncloud_ynh/tree/testing --debug
+sudo yunohost app upgrade opencloud -u https://github.com/YunoHost-Apps/opencloud_ynh/tree/testing --debug
 ```
 
 **Info lebih lanjut mengenai pemaketan aplikasi:** <https://yunohost.org/packaging_apps>
