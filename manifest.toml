@@ -17,7 +17,7 @@ code = "https://github.com/opencloud-eu/opencloud"
 [integration]
 yunohost = ">= 12.0.9"
 helpers_version = "2.1"
-architectures = "all"
+architectures = ["arm64", "amd64"]
 multi_instance = false
 
 ldap = false
@@ -50,8 +50,10 @@ ram.runtime = "50M"
     [resources.sources.main]
     extract = false
     rename = "opencloud"
-    url = "https://github.com/opencloud-eu/opencloud/releases/download/v1.0.0/opencloud-1.0.0-linux-amd64"
-    sha256 = "1e602a12e91f38fddad648fce367e4359bb0aba46b0981c6b89c969fc4a58bca"
+    amd64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v1.0.0/opencloud-1.0.0-linux-amd64"
+    amd64.sha256 = "1e602a12e91f38fddad648fce367e4359bb0aba46b0981c6b89c969fc4a58bca"
+    arm64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v1.0.0/opencloud-1.0.0-linux-arm"
+    arm64.sha256 = "06700d8781aaab0aae2fcd84b0c49e617d3f0869647858b64116e4994f95356c"
 
     [resources.system_user]
 
