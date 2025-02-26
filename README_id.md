@@ -24,7 +24,7 @@ OpenCloud is the new file sync & share platform that will be the foundation of y
 
 ## Tangkapan Layar
 
-![Tangkapan Layar pada OpenCloud](./doc/screenshots/screenshot.png)
+![Tangkapan Layar pada OpenCloud](./doc/screenshots/screenshot.jpg)
 
 ## Dokumentasi dan sumber daya
 
