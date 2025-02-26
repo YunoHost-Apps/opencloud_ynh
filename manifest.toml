@@ -1,0 +1,87 @@
+packaging_format = 2
+
+id = "owncloud"
+name = "ownCloud"
+description.en = "Online storage, file sharing platform"
+description.fr = "Stockage en ligne, plateforme de partage de fichiers"
+
+version = "7.1.0~ynh1"
+
+maintainers = ["eric_G"]
+
+[upstream]
+license = "Apache-2.0"
+website = "https://owncloud.com"
+demo = "https://ocis.owncloud.com/"
+admindoc = "https://doc.owncloud.com/ocis/next/"
+code = "https://github.com/owncloud/ocis"
+cpe = "cpe:2.3:a:owncloud:owncloud"
+
+[integration]
+yunohost = ">= 12.0.9"
+helpers_version = "2.1"
+architectures = "all"
+multi_instance = false
+
+ldap = false
+sso = false
+
+disk = "100M"
+ram.build = "800M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+    [install.language]
+    ask.en = "Choose the application language"
+    ask.fr = "Choisissez la langue de l'application"
+    type = "select"
+    choices = ["cs", "de", "en", "es", "fr", "gl", "it"]
+    default = "fr"
+
+    [install.password]
+    type = "password"
+
+[resources]
+
+        [resources.sources.main]
+        amd64.url = "https://github.com/owncloud/ocis/releases/download/v7.1.0-rc.4/ocis-7.1.0-rc.4-linux-amd64"
+        amd64.sha256 = "5fde7ab981834c7b81dab111a0301daa031d5509b19fec1c0aac31cbdaf9ca4f"
+        arm64.url = "https://github.com/owncloud/ocis/releases/download/v7.0.0/ocis-7.0.0-linux-arm64"
+        arm64.sha256 = "b4c2d331e7c0dc1d9b20d99365734e66d999d702b229c9939b7476f14d610b09"
+        armhf.url = "https://github.com/owncloud/ocis/releases/download/v7.0.0/ocis-7.0.0-linux-arm"
+        armhf.sha256 = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        i386.url = "https://github.com/owncloud/ocis/releases/download/v7.0.0/ocis-7.0.0-linux-386"
+        i386.sha256 = "816daf3f04242a30b13609ade75d25ef31a4c79f396f0f0802ff87ddf2eee91b"
+        in_subdir = false
+        rename = "ocis"
+
+        autoupdate.strategy = "latest_github_release"
+        autoupdate.asset.amd64 = "^ocis-.*-linux-amd64$"
+        autoupdate.asset.arm64 = "^ocis-.*-linux-arm64$"
+        autoupdate.asset.armhf = "^ocis-.*-linux-arm$"
+        autoupdate.asset.i386 = "^ocis-.*-linux-386$"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+    
+    [resources.data_dir]
+    subdirs = ["config"]
+
+    [resources.permissions]
+    main.url = "/"
+    main.auth_header = false
+    api.url = "/api"
+    api.auth_header = false
+    api.show_tile = false
+    api.protected= true
+    api.allowed = ["visitors"]
+
+    [resources.ports]
