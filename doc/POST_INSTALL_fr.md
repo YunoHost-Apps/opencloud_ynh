@@ -1,1 +1,1 @@
-Connectez-vous à ownCloud avec « admin » comme nom d'utilisateur et le mot de passe sélectionné lors de l'installation.
+Connectez-vous à OpenCloud avec « admin » comme nom d'utilisateur et le mot de passe sélectionné lors de l'installation.

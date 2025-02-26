@@ -1,12 +1,12 @@
 [Unit]
-Description=ownCloud: Infinite Scale server
+Description=OpenCloud: online storage
 
 [Service]
 Type=simple
 User=__APP__
 Group=__APP__
-EnvironmentFile=__DATA_DIR__/config/ocis.env
-ExecStart=__INSTALL_DIR__/ocis server
+EnvironmentFile=__DATA_DIR__/config/opencloud.env
+ExecStart=__INSTALL_DIR__/opencloud server
 Restart=always
 
 # Sandboxing options to harden security
