@@ -29,9 +29,8 @@ ynh_config_add --template=".env" --destination="$install_dir/opencloud.env"
 #=================================================
 ynh_script_progression "Installing $app..."
 
-pushd "$install_dir"
-	./ocis init --insecure=true --force-overwrite=true --admin-password=$password --config-path=$data_dir/config/
-popd
+$install_dir/opencloud init --insecure=true --force-overwrite=true --admin-password=$password --config-path=$data_dir/config/
+
 
 chmod 400 "$data_dir/config/ocis.yaml"
 chown $app:$app "$data_dir/config/ocis.yaml"
