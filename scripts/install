@@ -3,6 +3,9 @@
 source _common.sh
 source /usr/share/yunohost/helpers
 
+password=$(ynh_app_setting_get --key=password)
+ynh_app_setting_set --key=password --value="$password"
+
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
