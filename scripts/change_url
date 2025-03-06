@@ -27,6 +27,18 @@ ynh_script_progression "Adding $app's configuration..."
 ynh_config_add --template=".env" --destination="$install_dir/opencloud.env"
 
 #=================================================
+# INSTALL OPENCLOUD
+#=================================================
+ynh_script_progression "Installing $app..."
+
+pushd "$install_dir"
+	./ocis init --insecure=true --force-overwrite=true --admin-password=$password --config-path=$data_dir/config/
+popd
+
+chmod 400 "$data_dir/config/ocis.yaml"
+chown $app:$app "$data_dir/config/ocis.yaml"
+
+#=================================================
 # START SYSTEMD SERVICE
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
