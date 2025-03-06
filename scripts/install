@@ -35,7 +35,7 @@ ynh_script_progression "Adding $app's configuration..."
 ynh_config_add --template=".env" --destination="$data_dir/config/opencloud.env"
 
 #=================================================
-# INSTALL OWNCLOUD
+# INSTALL OPENCLOUD
 #=================================================
 ynh_script_progression "Installing $app..."
 
