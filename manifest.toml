@@ -55,6 +55,10 @@ ram.runtime = "50M"
     arm64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v1.0.0/opencloud-1.0.0-linux-arm"
     arm64.sha256 = "06700d8781aaab0aae2fcd84b0c49e617d3f0869647858b64116e4994f95356c"
 
+        autoupdate.strategy = "latest_github_release"
+        autoupdate.asset.amd64 = "^opencloud-.*-linux-amd64$"
+        autoupdate.asset.arm64 = "^opencloud-.*-linux-arm$"
+
     [resources.system_user]
 
     [resources.install_dir]
