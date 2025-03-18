@@ -59,6 +59,27 @@ ram.runtime = "50M"
     autoupdate.asset.amd64 = "^opencloud-.*-linux-amd64$"
     autoupdate.asset.arm64 = "^opencloud-.*-linux-arm$"
 
+    [resources.sources.draw-io]
+    url = "https://github.com/owncloud/web-extensions/releases/download/draw-io-v0.3.0/draw-io-0.3.0.zip"
+    sha256 = "64ac799eb0576da5cf7f7f1ac9308090148ad423624713beae0f1c0820b77488"
+    in_subdir = false
+    autoupdate.strategy = "latest_github_release"
+    autoupdate.asset = "^draw-io-.*.zip"
+
+    [resources.sources.external-sites]
+    url = "https://github.com/owncloud/web-extensions/releases/download/external-sites-v0.3.0/external-sites-0.3.0.zip"
+    sha256 = "82bb9227f95394b23b215c336ab6f133c229a988964c347b718bac23c404436a"
+    in_subdir = false
+    autoupdate.strategy = "latest_github_release"
+    autoupdate.asset = "^external-sites-.*.zip"
+
+    [resources.sources.mdpresentation-viewer]
+    url = "https://github.com/JankariTech/web-app-presentation-viewer/releases/download/2.0.0/mdpresentation-viewer-2.0.0.zip"
+    sha256 = "2e2389b197b278d23e5488eb4f467238f00e4ffa8a9051d086fc03d476bdd186"
+    in_subdir = false
+    autoupdate.strategy = "latest_github_release"
+    autoupdate.asset = "^mdpresentation-viewer-.*.zip"
+
     [resources.system_user]
 
     [resources.install_dir]
