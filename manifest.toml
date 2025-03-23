@@ -73,6 +73,12 @@ ram.runtime = "50M"
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset = "^external-sites-.*.zip"
 
+    [resources.sources.unzip]
+    url = "https://github.com/opencloud-eu/web-extensions/releases/download/unzip-v1.0.0/unzip-1.0.0.zip"
+    sha256 = "9ba9d080e92198c29cb95d58132ba1bf0b3f8e40ff9fd6f0015625e5f505dc3d"
+    in_subdir = false
+    autoupdate.strategy = "latest_github_release"
+    autoupdate.asset = "^unzip-.*.zip"
 
     [resources.system_user]
 
