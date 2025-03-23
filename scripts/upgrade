@@ -17,9 +17,9 @@ ynh_script_progression "Upgrading source files..."
 
 ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="apps"
 
-ynh_setup_source --dest_dir="$install_dir/apps" --source_id="draw-io" --full_replace
 ynh_setup_source --dest_dir="$install_dir/apps" --source_id="external-sites" --keep="apps/external-sites/manifest.json"
-ynh_setup_source --dest_dir="$install_dir/apps" --source_id="unzip" --full_replace
+ynh_setup_source --dest_dir="$install_dir/apps" --source_id="draw-io"
+ynh_setup_source --dest_dir="$install_dir/apps" --source_id="unzip"
 
 chmod +x $install_dir/opencloud
 
