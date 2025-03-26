@@ -3,12 +3,20 @@
 source _common.sh
 source /usr/share/yunohost/helpers
 
+
+password=$YNH_APP_ARG_PASSWORD
+ynh_app_setting_set --key=password --value=$password
+
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
+
+ynh_setup_source --dest_dir="$install_dir/apps" --source_id="draw-io"
+ynh_setup_source --dest_dir="$install_dir/apps" --source_id="external-sites"
+ynh_setup_source --dest_dir="$install_dir/apps" --source_id="unzip"
 
 chmod +x $install_dir/opencloud
 
@@ -31,7 +39,7 @@ ynh_script_progression "Adding $app's configuration..."
 ynh_config_add --template=".env" --destination="$data_dir/config/opencloud.env"
 
 #=================================================
-# INSTALL OWNCLOUD
+# INSTALL OPENCLOUD
 #=================================================
 ynh_script_progression "Installing $app..."
 
