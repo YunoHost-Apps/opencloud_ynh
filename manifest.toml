@@ -17,7 +17,7 @@ code = "https://github.com/opencloud-eu/opencloud"
 [integration]
 yunohost = ">= 12.0.9"
 helpers_version = "2.1"
-architectures = ["arm64", "amd64", "amdhf"]
+architectures = "all"
 multi_instance = false
 
 ldap = false
@@ -57,10 +57,14 @@ ram.runtime = "50M"
     arm64.sha256 = "572aba6fabd01f6d1203aebc186ee215dc88845e334240d90293c22427ff462e"
     armhf.url = "https://github.com/opencloud-eu/opencloud/releases/download/v2.0.0/opencloud-2.0.0-linux-arm"
     armhf.sha256 = "33f2f3a36d32d89029ec5df336c07afd9f6cc9e82530b5e2e72b33a4f0c83c8f"
+    386.url = "https://github.com/opencloud-eu/opencloud/releases/download/v2.0.0/opencloud-2.0.0-linux-386"
+    386.sha256 = "10e175973496eb6895ffe8cfff0187a73e7b6db1eaa346bce9f1112114872dc4"
+
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = "^opencloud-.*-linux-amd64$"
     autoupdate.asset.arm64 = "^opencloud-.*-linux-arm64$"
     autoupdate.asset.armhf = "^opencloud-.*-linux-arm$"
+    autoupdate.asset.386 = "^opencloud-.*-linux-386$"
 
     [resources.sources.draw-io]
     url = "https://github.com/opencloud-eu/web-extensions/releases/download/draw-io-v1.0.0/draw-io-1.0.0.zip"
