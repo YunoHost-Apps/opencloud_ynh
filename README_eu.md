@@ -35,7 +35,7 @@ OpenCloud is the new file sync & share platform that will be the foundation of y
 - Multi-device sync with offline access across all your devices
 
 
-**Paketatutako bertsioa:** 1.0.0~ynh2
+**Paketatutako bertsioa:** 2.0.0~ynh2
 
 ## Pantaila-argazkiak
 
@@ -52,7 +52,7 @@ OpenCloud is the new file sync & share platform that will be the foundation of y
 
 Bidali `pull request`a [`testing` abarrera](https://github.com/YunoHost-Apps/opencloud_ynh/tree/testing).
 
-`testing` abarra probatzeko, ondorengoa egin:
+`testing` abarra probatzeko, honakoa egin:
 
 ```bash
 sudo yunohost app install https://github.com/YunoHost-Apps/opencloud_ynh/tree/testing --debug
