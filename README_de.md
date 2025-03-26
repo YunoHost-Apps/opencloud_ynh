@@ -35,7 +35,7 @@ OpenCloud is the new file sync & share platform that will be the foundation of y
 - Multi-device sync with offline access across all your devices
 
 
-**Ausgelieferte Version:** 2.0.0~ynh1
+**Ausgelieferte Version:** 2.0.0~ynh2
 
 ## Bildschirmfotos
 
