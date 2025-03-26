@@ -15,7 +15,11 @@ ynh_systemctl --action="stop" --log_path="systemd"
 #=================================================
 ynh_script_progression "Upgrading source files..."
 
-ynh_setup_source --dest_dir="$install_dir" --full_replace
+ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="apps"
+
+ynh_setup_source --dest_dir="$install_dir/apps" --source_id="external-sites" --keep="apps/external-sites/manifest.json"
+ynh_setup_source --dest_dir="$install_dir/apps" --source_id="draw-io"
+ynh_setup_source --dest_dir="$install_dir/apps" --source_id="unzip"
 
 chmod +x $install_dir/opencloud
 
@@ -33,9 +37,9 @@ yunohost service add $app --description="File sharing platform" --log="/var/log/
 #=================================================
 # ADD A CONFIGURATION
 #=================================================
-#ynh_script_progression "Adding $app's configuration..."
+ynh_script_progression "Adding $app's configuration..."
 
-#ynh_config_add --template=".env" --destination="$data_dir/config/opencloud.env"
+ynh_config_add --template=".env" --destination="$data_dir/config/opencloud.env"
 
 #=================================================
 # START SYSTEMD SERVICE
