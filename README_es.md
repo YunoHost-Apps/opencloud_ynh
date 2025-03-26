@@ -3,7 +3,7 @@ Este archivo README esta generado automaticamente<https://github.com/YunoHost/ap
 No se debe editar a mano.
 -->
 
-# OpenCloud para Yunohost
+# OpenCloud para YunoHost
 
 [![Nivel de integración](https://apps.yunohost.org/badge/integration/opencloud)](https://ci-apps.yunohost.org/ci/apps/opencloud/)
 ![Estado funcional](https://apps.yunohost.org/badge/state/opencloud)
@@ -35,7 +35,7 @@ OpenCloud is the new file sync & share platform that will be the foundation of y
 - Multi-device sync with offline access across all your devices
 
 
-**Versión actual:** 1.1.0~ynh1
+**Versión actual:** 2.0.0~ynh1
 
 ## Capturas
 
