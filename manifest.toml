@@ -5,7 +5,7 @@ name = "OpenCloud"
 description.en = "Online storage, file sharing platform"
 description.fr = "Stockage en ligne, plateforme de partage de fichiers"
 
-version = "1.1.0~ynh1"
+version = "2.0.0~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -50,14 +50,18 @@ ram.runtime = "50M"
     [resources.sources.main]
     extract = false
     rename = "opencloud"
-    amd64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v1.1.0/opencloud-1.1.0-linux-amd64"
-    amd64.sha256 = "98878290bdf958bcf2a39a6eee9a808756c470475b818c293c33b200fb8e862f"
-    arm64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v1.1.0/opencloud-1.1.0-linux-arm"
-    arm64.sha256 = "194310bebbd2d45f54cae4be5f0dc16cf04425f493a1857df24e79504a6b8c55"
+
+    amd64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v2.0.0-beta.1/opencloud-2.0.0-beta.1-linux-amd64"
+    amd64.sha256 = "d3dcd5177b48b6880d7cbbbef0d61c2e40762e354a593ed5c698b6739560b483"
+    arm64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v2.0.0-beta.1/opencloud-2.0.0-beta.1-linux-arm64"
+    arm64.sha256 = "160795629019c97364097464765cfe7cb19148fd6c6f67f859b6ae979d1634a4"
+    armhf.url = "https://github.com/opencloud-eu/opencloud/releases/download/v2.0.0-beta.1/opencloud-2.0.0-beta.1-linux-arm"
+    armhf.sha256 = "7939b0526606db85d4820b96141df5d6b9446acc83c086e410c7439aabe736aa"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = "^opencloud-.*-linux-amd64$"
-    autoupdate.asset.arm64 = "^opencloud-.*-linux-arm$"
+    autoupdate.asset.arm64 = "^opencloud-.*-linux-arm64$"
+    autoupdate.asset.armhf = "^opencloud-.*-linux-arm$"
 
     [resources.system_user]
 
