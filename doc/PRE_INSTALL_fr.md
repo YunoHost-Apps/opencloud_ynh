@@ -1,0 +1,1 @@
+Pour tests uniquement. N'utilisez pas OpenCloud en production car ce paquet est encore en cours de développement. 
