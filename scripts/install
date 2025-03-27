@@ -47,11 +47,11 @@ ynh_config_add --template=".env" --destination="$install_dir/config/opencloud.en
 ynh_script_progression "Installing $app..."
 
 pushd "$install_dir"
-	./opencloud init --insecure=true --force-overwrite=true --admin-password=$password --config-path=$install_dir/
+	./opencloud init --insecure=true --force-overwrite=true --admin-password=$password --config-path=$install_dir/config/
 popd
 
-chmod 400 "$install_dir/opencloud.yaml"
-chown $app:$app "$install_dir/opencloud.yaml"
+chmod 400 "$install_dir/config/opencloud.yaml"
+chown $app:$app "$install_dir/config/opencloud.yaml"
 
 #=================================================
 # START SYSTEMD SERVICE
