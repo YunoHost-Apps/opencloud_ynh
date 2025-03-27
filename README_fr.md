@@ -35,7 +35,7 @@ OpenCloud est la nouvelle plateforme de synchronisation et de partage de fichier
 - Synchronisation multi-appareils avec accès hors ligne sur tous vos appareils
 
 
-**Version incluse :** 2.0.0~ynh2
+**Version incluse :** 2.0.0~ynh3
 
 ## Captures d’écran
 
