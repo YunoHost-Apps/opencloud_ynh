@@ -39,6 +39,7 @@ yunohost service add $app --description="File sharing platform" --log="/var/log/
 #=================================================
 ynh_script_progression "Adding $app's configuration..."
 
+mkdir -p $install_dir/config
 ynh_config_add --template=".env" --destination="$install_dir/config/opencloud.env"
 
 #=================================================
