@@ -104,4 +104,4 @@ ram.runtime = "50M"
     api.allowed = ["visitors"]
 
     [resources.ports]
-    web.default = 9001
+    web.default = 9101
