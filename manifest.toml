@@ -106,4 +106,4 @@ ram.runtime = "50M"
     [resources.ports]
     web.default = 9101
     debug.default = 6666
-    debug.default = 9253
+    runtime.default = 9253
