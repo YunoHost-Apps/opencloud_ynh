@@ -88,7 +88,8 @@ ram.runtime = "50M"
     autoupdate.asset = "^unzip-*.zip"
 
     [resources.system_user]
-
+    allow_email = true
+    
     [resources.install_dir]
     
     [resources.data_dir]

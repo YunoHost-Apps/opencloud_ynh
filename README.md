@@ -11,6 +11,7 @@ It shall NOT be edited by hand.
 Online storage, file sharing platform
 
 [![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://opencloud.eu/en)
+
 ![Version: 2.1.0~ynh1](https://img.shields.io/badge/Version-2.1.0~ynh1-rgba(0,150,0,1)?style=for-the-badge)
 
 <div align="center">
