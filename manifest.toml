@@ -72,6 +72,7 @@ ram.runtime = "50M"
     in_subdir = false
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset = "^draw-io-.*.zip"
+    autoupdate.upstream = "https://github.com/opencloud-eu/web-extensions"
 
     [resources.sources.external-sites]
     url = "https://github.com/opencloud-eu/web-extensions/releases/download/external-sites-v1.0.0/external-sites-1.0.0.zip"
@@ -79,6 +80,7 @@ ram.runtime = "50M"
     in_subdir = false
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset = "^external-sites-.*.zip"
+    autoupdate.upstream = "https://github.com/opencloud-eu/web-extensions"
 
     [resources.sources.unzip]
     url = "https://github.com/opencloud-eu/web-extensions/releases/download/unzip-v1.0.0/unzip-1.0.0.zip"
@@ -86,6 +88,7 @@ ram.runtime = "50M"
     in_subdir = false
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset = "^unzip-.*.zip"
+    autoupdate.upstream = "https://github.com/opencloud-eu/web-extensions"
 
     [resources.system_user]
 
