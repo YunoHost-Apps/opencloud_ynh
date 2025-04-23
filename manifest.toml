@@ -71,24 +71,27 @@ ram.runtime = "50M"
     sha256 = "3ef299c013a68938ea254cc0cddb32f81fb8bfcda35036bb8b6104eef07fefb6"
     in_subdir = false
     autoupdate.strategy = "latest_github_release"
-    autoupdate.asset = "^draw-io-.*.zip"
     autoupdate.upstream = "https://github.com/opencloud-eu/web-extensions"
+    autoupdate.version_regex = "^draw-io-v(.*)$"
+    autoupdate.asset = "^draw-io-.*.zip"
 
     [resources.sources.external-sites]
     url = "https://github.com/opencloud-eu/web-extensions/releases/download/external-sites-v1.0.0/external-sites-1.0.0.zip"
     sha256 = "183cdc4763a930fd2cbe1e27260c6782d908778d17a4cf52a3b58675a6e36ec1"
     in_subdir = false
     autoupdate.strategy = "latest_github_release"
-    autoupdate.asset = "^external-sites-.*.zip"
     autoupdate.upstream = "https://github.com/opencloud-eu/web-extensions"
+    autoupdate.version_regex = "^external-sites-v(.*)$"
+    autoupdate.asset = "^external-sites-.*.zip"
 
     [resources.sources.unzip]
     url = "https://github.com/opencloud-eu/web-extensions/releases/download/unzip-v1.0.0/unzip-1.0.0.zip"
     sha256 = "9ba9d080e92198c29cb95d58132ba1bf0b3f8e40ff9fd6f0015625e5f505dc3d"
     in_subdir = false
     autoupdate.strategy = "latest_github_release"
-    autoupdate.asset = "^unzip-.*.zip"
     autoupdate.upstream = "https://github.com/opencloud-eu/web-extensions"
+    autoupdate.version_regex = "^unzip-v(.*)$"
+    autoupdate.asset = "^unzip-.*.zip"
 
     [resources.system_user]
 
