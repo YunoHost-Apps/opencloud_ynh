@@ -64,7 +64,7 @@ ram.runtime = "50M"
     autoupdate.asset.amd64 = "^opencloud-.*-linux-amd64$"
     autoupdate.asset.arm64 = "^opencloud-.*-linux-arm64$"
     autoupdate.asset.armhf = "^opencloud-.*-linux-arm$"
-    autoupdate.asset.386 = "^opencloud-.*-linux-386$"
+    autoupdate.asset.i386 = "^opencloud-.*-linux-386$"
 
     [resources.sources.draw-io]
     url = "https://github.com/opencloud-eu/web-extensions/releases/download/draw-io-v1.0.0/draw-io-1.0.0.zip"
