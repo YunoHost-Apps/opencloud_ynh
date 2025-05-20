@@ -5,7 +5,7 @@ name = "OpenCloud"
 description.en = "Online storage, file sharing platform"
 description.fr = "Stockage en ligne, plateforme de partage de fichiers"
 
-version = "2.2.0~ynh2"
+version = "2.3.0~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -51,20 +51,20 @@ ram.runtime = "50M"
     [resources.sources.main]
     extract = false
     rename = "opencloud"
-    amd64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v2.2.0/opencloud-2.2.0-linux-amd64"
-    amd64.sha256 = "e8c7a9861e9df65e82cd936547e943e55cafb8f1bfc18962d87b3a406a1e49ff"
-    arm64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v2.2.0/opencloud-2.2.0-linux-arm64"
-    arm64.sha256 = "d4360f40f50e601060d92566b54e23b16f3891e6f1f683466097cd99ddb33dde"
-    armhf.url = "https://github.com/opencloud-eu/opencloud/releases/download/v2.2.0/opencloud-2.2.0-linux-arm"
-    armhf.sha256 = "c34cc78894b27d4290f476b6fc7a79fe15455a2c7d9a467d145ed2ddbd0e44e9"
-    i386.url = "https://github.com/opencloud-eu/opencloud/releases/download/v2.2.0/opencloud-2.2.0-linux-386"
-    i386.sha256 = "e69bdf15ca935780f8c9917e5376770cfdbd0cece03688fe8fe38299989619c7"
+    amd64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v2.3.0/opencloud-2.3.0-linux-amd64"
+    amd64.sha256 = "3939948904d056987fe24ce9bc042e7d136b0ee9f5950c34f33044855c37a258"
+    arm64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v2.3.0/opencloud-2.3.0-linux-arm64"
+    arm64.sha256 = "4d2b7f00391321795bb600548b60ee245b03be045721b71140b386d67b5fb112"
+    armhf.url = "https://github.com/opencloud-eu/opencloud/releases/download/v2.3.0/opencloud-2.3.0-linux-arm"
+    armhf.sha256 = "91ecb4ccc3ecb6cc701c5de66e2a2183557bf84b786bf0d119c084bc43c650d5"
+    i386.url = "https://github.com/opencloud-eu/opencloud/releases/download/v2.3.0/opencloud-2.3.0-linux-386"
+    i386.sha256 = "fec46cf699a2a9ab6f7f33ae27b7c7af91e59f50846b0b3443851aa61a4d8699"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = "^opencloud-.*-linux-amd64$"
     autoupdate.asset.arm64 = "^opencloud-.*-linux-arm64$"
     autoupdate.asset.armhf = "^opencloud-.*-linux-arm$"
-    autoupdate.asset.386 = "^opencloud-.*-linux-386$"
+    autoupdate.asset.i386 = "^opencloud-.*-linux-386$"
 
     [resources.sources.draw-io]
     url = "https://github.com/opencloud-eu/web-extensions/releases/download/draw-io-v1.0.0/draw-io-1.0.0.zip"
