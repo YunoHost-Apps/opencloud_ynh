@@ -5,7 +5,7 @@ name = "OpenCloud"
 description.en = "Online storage, file sharing platform"
 description.fr = "Stockage en ligne, plateforme de partage de fichiers"
 
-version = "3.3.0~ynh1"
+version = "3.3.0~ynh2"
 
 maintainers = ["eric_G"]
 
@@ -75,8 +75,8 @@ ram.runtime = "50M"
     autoupdate.asset = "^draw-io-.*.zip"
 
     [resources.sources.external-sites]
-    url = "https://github.com/opencloud-eu/web-extensions/releases/download/external-sites-v1.0.0/external-sites-1.0.0.zip"
-    sha256 = "183cdc4763a930fd2cbe1e27260c6782d908778d17a4cf52a3b58675a6e36ec1"
+    url = "https://github.com/opencloud-eu/web-extensions/releases/download/external-sites-v1.1.0/external-sites-1.1.0.zip"
+    sha256 = "afe8871f0c89096ab5eed996e03f35262205f789e52e05a4a2cc22768ba1c00b"
     in_subdir = false
     autoupdate.strategy = "latest_github_release"
     autoupdate.upstream = "https://github.com/opencloud-eu/web-extensions"
