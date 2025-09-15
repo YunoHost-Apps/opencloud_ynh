@@ -60,6 +60,8 @@ popd
 chmod 400 "$data_dir/config/opencloud.yaml"
 chown $app:$app "$data_dir/config/opencloud.yaml"
 
+chown -R $app: "$data_dir"
+
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
