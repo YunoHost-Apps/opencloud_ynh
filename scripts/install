@@ -31,6 +31,9 @@ ynh_config_add_systemd
 
 yunohost service add $app --description="File sharing platform" --log="/var/log/$app/$app.log"
 
+# Use logrotate to manage application logfile(s)
+ynh_config_add_logrotate
+
 #=================================================
 # ADD A CONFIGURATION
 #=================================================
