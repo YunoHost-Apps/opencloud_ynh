@@ -98,7 +98,7 @@ ram.runtime = "50M"
     [resources.install_dir]
     
     [resources.data_dir]
-    subdirs = ["config"]
+    subdirs = ["config", "idm", "idp", "nats", "proxy", "search", "storage"]
 
     [resources.permissions]
     main.url = "/"

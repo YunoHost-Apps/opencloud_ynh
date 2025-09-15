@@ -41,10 +41,14 @@ ynh_script_progression "Adding $app's configuration..."
 
 ynh_config_add --template=".env" --destination="$data_dir/config/opencloud.env"
 
+chmod 600 "$data_dir/config/opencloud.env"
+
 #=================================================
 # INSTALL OPENCLOUD
 #=================================================
 ynh_script_progression "Installing $app..."
+
+mkdir -p $data_dir/storage/users/{nodes,uploads,trash,indexes}
 
 pushd "$install_dir"
 	./opencloud init --insecure=true --force-overwrite=true --admin-password=$password --config-path=$data_dir/config/
