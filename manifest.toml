@@ -5,7 +5,7 @@ name = "OpenCloud"
 description.en = "Online storage, file sharing platform"
 description.fr = "Stockage en ligne, plateforme de partage de fichiers"
 
-version = "3.5.0~ynh2"
+version = "3.6.0~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -50,14 +50,14 @@ ram.runtime = "50M"
     [resources.sources.main]
     extract = false
     rename = "opencloud"
-    amd64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v3.5.0/opencloud-3.5.0-linux-amd64"
-    amd64.sha256 = "3ca89163c3c63b2f6917419f952da00ec2134872bc12877809457f9506788e1d"
-    arm64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v3.5.0/opencloud-3.5.0-linux-arm64"
-    arm64.sha256 = "b761fa929400c9f0fb4f9028107e1923e02f13d30f33280a7580528b13022417"
-    armhf.url = "https://github.com/opencloud-eu/opencloud/releases/download/v3.5.0/opencloud-3.5.0-linux-arm"
-    armhf.sha256 = "1d543792f6b369bbd7653f5686a12edd63113d609ff8b184f6e7fb573e893e18"
-    i386.url = "https://github.com/opencloud-eu/opencloud/releases/download/v3.5.0/opencloud-3.5.0-linux-386"
-    i386.sha256 = "7b8e530eba5189fc69b786350b0e915894f4c43fe5d7b16d51cd53f7b004d10e"
+    amd64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v3.6.0/opencloud-3.6.0-linux-amd64"
+    amd64.sha256 = "5fb70fc13079ed1cd1d2aadd599790ebbd2bd5299aeebe6859536e6af084f0a8"
+    arm64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v3.6.0/opencloud-3.6.0-linux-arm64"
+    arm64.sha256 = "d3629fd0a271836d2980c27bb276438e6e657a31507d7833d1ef2fc60e691292"
+    armhf.url = "https://github.com/opencloud-eu/opencloud/releases/download/v3.6.0/opencloud-3.6.0-linux-arm"
+    armhf.sha256 = "90a08e66d1c62df92e82541b882e88e72a8c7720811b171d2021e73c8694301b"
+    i386.url = "https://github.com/opencloud-eu/opencloud/releases/download/v3.6.0/opencloud-3.6.0-linux-386"
+    i386.sha256 = "1993f9282c622ae02c69a74f492e4986e855482dd04dbb92844ccea208024885"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = "^opencloud-.*-linux-amd64$"
@@ -84,8 +84,8 @@ ram.runtime = "50M"
     autoupdate.asset = "^external-sites-.*.zip"
 
     [resources.sources.unzip]
-    url = "https://github.com/opencloud-eu/web-extensions/releases/download/unzip-v1.0.3/unzip-1.0.3.zip"
-    sha256 = "961a88129baf657ab65456a3d0fdf43c3981abe27354b7844325d287ecc97f51"
+    url = "https://github.com/opencloud-eu/web-extensions/releases/download/unzip-v1.0.4/unzip-1.0.4.zip"
+    sha256 = "f0ad50d8e5173f30d708d3f0c0854ea34245a967ddfd40e0dcb1b85834e8a304"
     in_subdir = false
     autoupdate.strategy = "latest_github_release"
     autoupdate.upstream = "https://github.com/opencloud-eu/web-extensions"
