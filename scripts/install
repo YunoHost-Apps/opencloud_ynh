@@ -3,6 +3,9 @@
 source _common.sh
 source /usr/share/yunohost/helpers
 
+#=================================================
+# INITIALIZE AND STORE SETTINGS
+#=================================================
 
 password=$YNH_APP_ARG_PASSWORD
 ynh_app_setting_set --key=password --value=$password
@@ -31,6 +34,9 @@ ynh_config_add_systemd
 
 yunohost service add $app --description="File sharing platform" --log="/var/log/$app/$app.log"
 
+# Use logrotate to manage application logfile(s)
+ynh_config_add_logrotate
+
 #=================================================
 # ADD A CONFIGURATION
 #=================================================
@@ -38,17 +44,21 @@ ynh_script_progression "Adding $app's configuration..."
 
 ynh_config_add --template=".env" --destination="$data_dir/config/opencloud.env"
 
+chmod 600 "$data_dir/config/opencloud.env"
+
 #=================================================
 # INSTALL OPENCLOUD
 #=================================================
 ynh_script_progression "Installing $app..."
+
+mkdir -p $data_dir/storage/users/{nodes,uploads,trash,indexes}
 
 pushd "$install_dir"
 	./opencloud init --insecure=true --force-overwrite=true --admin-password=$password --config-path=$data_dir/config/
 popd
 
 chmod 400 "$data_dir/config/opencloud.yaml"
-chown $app:$app "$data_dir/config/opencloud.yaml"
+chown -R $app:$app "$data_dir"
 
 #=================================================
 # START SYSTEMD SERVICE
