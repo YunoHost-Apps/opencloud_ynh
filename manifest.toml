@@ -110,3 +110,6 @@ ram.runtime = "50M"
     api.allowed = ["visitors"]
 
     [resources.ports]
+
+    [resources.apt]
+    packages = "inotifywatch"
