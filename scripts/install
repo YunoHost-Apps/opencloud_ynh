@@ -17,11 +17,13 @@ ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
 
+chmod +x $install_dir/opencloud
+
 ynh_setup_source --dest_dir="$install_dir/apps" --source_id="draw-io"
 ynh_setup_source --dest_dir="$install_dir/apps" --source_id="external-sites"
 ynh_setup_source --dest_dir="$install_dir/apps" --source_id="unzip"
 
-chmod +x $install_dir/opencloud
+chown -R $app: "$install_dir"
 
 #=================================================
 # SYSTEM CONFIGURATION
