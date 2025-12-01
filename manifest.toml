@@ -112,4 +112,4 @@ ram.runtime = "50M"
     [resources.ports]
 
     [resources.apt]
-    packages = "inotifywatch"
+    packages = "inotify-tools"
