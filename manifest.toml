@@ -5,7 +5,7 @@ name = "OpenCloud"
 description.en = "Online storage, file sharing platform"
 description.fr = "Stockage en ligne, plateforme de partage de fichiers"
 
-version = "4.1.0~ynh1"
+version = "5.0.1~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -15,7 +15,7 @@ website = "https://opencloud.eu/en"
 code = "https://github.com/opencloud-eu/opencloud"
 
 [integration]
-yunohost = ">= 12.1.17"
+yunohost = ">= 12.1.38"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = false
@@ -50,14 +50,14 @@ ram.runtime = "50M"
     [resources.sources.main]
     extract = false
     rename = "opencloud"
-    amd64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v4.1.0/opencloud-4.1.0-linux-amd64"
-    amd64.sha256 = "7f36b5563fee81aef07deaece442cc888ed4b7c2841200dea11674d78dd0884d"
-    arm64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v4.1.0/opencloud-4.1.0-linux-arm64"
-    arm64.sha256 = "c26be54e828c781c175bf3b99de5192cedb3ffa08b8161405df7edeb613aeeb6"
-    armhf.url = "https://github.com/opencloud-eu/opencloud/releases/download/v4.1.0/opencloud-4.1.0-linux-arm"
-    armhf.sha256 = "fbb3ca35be504b8024e9033ae78c2aa47c254c8073b7b0f8b655daac20e1b71b"
-    i386.url = "https://github.com/opencloud-eu/opencloud/releases/download/v4.1.0/opencloud-4.1.0-linux-386"
-    i386.sha256 = "11c856837b2959a97df6f44733c514f72b7b5196b596f352c7507d0eb6d54b7e"
+    amd64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v5.0.1/opencloud-5.0.1-linux-amd64"
+    amd64.sha256 = "abee56a3d6909e46ffb36c2fe353ed63b7018c8ecfed037e751d552d85c724bd"
+    arm64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v5.0.1/opencloud-5.0.1-linux-arm64"
+    arm64.sha256 = "506b58a575864eb61483cfc4f8ee564ab7e6e992bdc0a87105cca4dbb84b8000"
+    armhf.url = "https://github.com/opencloud-eu/opencloud/releases/download/v5.0.1/opencloud-5.0.1-linux-arm"
+    armhf.sha256 = "d70971d8ee6a281b8c9064feb3b5388b893c314dfad7cdf23b3f73e2f01d3619"
+    i386.url = "https://github.com/opencloud-eu/opencloud/releases/download/v5.0.1/opencloud-5.0.1-linux-386"
+    i386.sha256 = "0f074ba7b649e0e3c707599bb52c5cf1e0ba6bcc70c36f9b577e4eaf5e97affe"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = "^opencloud-.*-linux-amd64$"
