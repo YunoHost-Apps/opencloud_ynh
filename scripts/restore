@@ -30,6 +30,14 @@ systemctl enable $app.service --quiet
 yunohost service add $app --description="File sharing platform" --log="/var/log/$app/$app.log"
 
 #=================================================
+# RESTORE VARIOUS FILES
+#=================================================
+
+ynh_restore "/var/log/$app/"
+chown -R "$app:$app" "/var/log/$app" 
+chmod -R 750  "/var/log/$app" 
+
+#=================================================
 # START SYSTEMD SERVICE
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."

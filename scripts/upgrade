@@ -15,7 +15,7 @@ ynh_systemctl --action="stop" --log_path="systemd"
 #=================================================
 ynh_script_progression "Upgrading source files..."
 
-ynh_setup_source --dest_dir="$install_dir" --full_replace --keep="apps"
+ynh_setup_source --dest_dir="$install_dir" --full_replace --keep=".opencloud apps"
 
 ynh_setup_source --dest_dir="$install_dir/apps" --source_id="external-sites" --keep="apps/external-sites/manifest.json"
 ynh_setup_source --dest_dir="$install_dir/apps" --source_id="draw-io"
@@ -33,6 +33,8 @@ ynh_config_add_nginx
 ynh_config_add_systemd
 
 yunohost service add $app --description="File sharing platform" --log="/var/log/$app/$app.log"
+
+ynh_config_add_logrotate
 
 #=================================================
 # ADD A CONFIGURATION
