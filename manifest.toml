@@ -5,7 +5,7 @@ name = "OpenCloud"
 description.en = "Online storage, file sharing platform"
 description.fr = "Stockage en ligne, plateforme de partage de fichiers"
 
-version = "5.1.0~ynh2"
+version = "5.2.0~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -21,7 +21,7 @@ architectures = "all"
 multi_instance = false
 
 ldap = false
-sso = false
+sso = true
 
 disk = "100M"
 ram.build = "250M"
@@ -50,14 +50,14 @@ ram.runtime = "50M"
     [resources.sources.main]
     extract = false
     rename = "opencloud"
-    amd64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v5.1.0/opencloud-5.1.0-linux-amd64"
-    amd64.sha256 = "6771214f48687e69e6e6e5b8c969ee8746e9573502af95e3c52881a5c9b789fd"
-    arm64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v5.1.0/opencloud-5.1.0-linux-arm64"
-    arm64.sha256 = "341ed6c18c7e636da43adc4ec13e9315c71bed8fb2a3e4f5c05f816572ec9c61"
-    armhf.url = "https://github.com/opencloud-eu/opencloud/releases/download/v5.1.0/opencloud-5.1.0-linux-arm"
-    armhf.sha256 = "ce291b6ee60db74fc8d76628346954bfe1427fc8a830c02d33834c798538f9cc"
-    i386.url = "https://github.com/opencloud-eu/opencloud/releases/download/v5.1.0/opencloud-5.1.0-linux-386"
-    i386.sha256 = "6c7d7ed91339a94dc831a3e9a7ada53b91b2122e549aa0caa33f801eb87e2666"
+    amd64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v5.2.0/opencloud-5.2.0-linux-amd64"
+    amd64.sha256 = "9f2f1bcb6355b6d5d16ee3c00bc011941c687df985993dff29df09e644327477"
+    arm64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v5.2.0/opencloud-5.2.0-linux-arm64"
+    arm64.sha256 = "0f94bac9960a474b75152a5371ce66ad7dc4746bb56ec5f7c25e80cbbf94cd14"
+    armhf.url = "https://github.com/opencloud-eu/opencloud/releases/download/v5.2.0/opencloud-5.2.0-linux-arm"
+    armhf.sha256 = "2a10e5b79fd5657b1be12d04e0850c12f1b89e1ffc26248cad363756862563ba"
+    i386.url = "https://github.com/opencloud-eu/opencloud/releases/download/v5.2.0/opencloud-5.2.0-linux-386"
+    i386.sha256 = "c1f67e8098eb1cd917df382da5b7525261480bcddb7b4b1efa7c432f06d725e5"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = "^opencloud-.*-linux-amd64$"
