@@ -5,7 +5,7 @@ name = "OpenCloud"
 description.en = "Online storage, file sharing platform"
 description.fr = "Stockage en ligne, plateforme de partage de fichiers"
 
-version = "6.0.0~ynh3"
+version = "6.1.0~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -50,14 +50,14 @@ ram.runtime = "50M"
     [resources.sources.main]
     extract = false
     rename = "opencloud"
-    amd64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v6.0.0/opencloud-6.0.0-linux-amd64"
-    amd64.sha256 = "ca64d8c547afe4c6e7352e639d49d9d927a053296ebc924a13d0cb25a6ab1c46"
-    arm64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v6.0.0/opencloud-6.0.0-linux-arm64"
-    arm64.sha256 = "f88dcedb51e73e27a09263f1711dd296f1c77bfc38ee55271318aa6f2ffd678b"
-    armhf.url = "https://github.com/opencloud-eu/opencloud/releases/download/v6.0.0/opencloud-6.0.0-linux-arm"
-    armhf.sha256 = "6e4249f57b204603dd7d6c38cfb7ce06a94141b70aa772556dc5e680034d941c"
-    i386.url = "https://github.com/opencloud-eu/opencloud/releases/download/v6.0.0/opencloud-6.0.0-linux-386"
-    i386.sha256 = "c7f3fc89d3e4f04f2bd6649353d8f91a0dea888a76a61044e9020c9e4e1acb31"
+    amd64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v6.1.0/opencloud-6.1.0-linux-amd64"
+    amd64.sha256 = "d1198359cc060b203c372d416f6889ce49174976f8cbd68ab76e616170f2511c"
+    arm64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v6.1.0/opencloud-6.1.0-linux-arm64"
+    arm64.sha256 = "9d5e15db2833615dd2309b3ad36ceab2b42f7dd2a8c0f4035c9eaa6cde4d2fe0"
+    armhf.url = "https://github.com/opencloud-eu/opencloud/releases/download/v6.1.0/opencloud-6.1.0-linux-arm"
+    armhf.sha256 = "78fc4667e131349091a98ae85640686e3ab728b4f4b6c04f5b5d14ef89e0069e"
+    i386.url = "https://github.com/opencloud-eu/opencloud/releases/download/v6.1.0/opencloud-6.1.0-linux-386"
+    i386.sha256 = "66172d2551bf36884ed2e7ac5ff3b8326df2b6d67fb80b692fb36165d85184af"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = "^opencloud-.*-linux-amd64$"
