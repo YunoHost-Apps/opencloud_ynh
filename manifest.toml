@@ -5,7 +5,7 @@ name = "OpenCloud"
 description.en = "Online storage, file sharing platform"
 description.fr = "Stockage en ligne, plateforme de partage de fichiers"
 
-version = "6.2.0~ynh1"
+version = "7.0.0~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -58,7 +58,7 @@ ram.runtime = "50M"
     armhf.sha256 = "827e20077ae10c9f79a147bb44d69a3ffc20c786649eda38bafcea394e1a6bc9"
     i386.url = "https://github.com/opencloud-eu/opencloud/releases/download/v7.0.0/opencloud-7.0.0-linux-386"
     i386.sha256 = "33a478a397dd08166d8a08f76b27e16f5d3294e6947a5c078fa79c15311178d4"
-    
+
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = "^opencloud-.*-linux-amd64$"
     autoupdate.asset.arm64 = "^opencloud-.*-linux-arm64$"
