@@ -20,7 +20,7 @@ helpers_version = "2.1"
 architectures = "all"
 multi_instance = false
 
-ldap = false
+ldap = true
 sso = true
 
 disk = "100M"
