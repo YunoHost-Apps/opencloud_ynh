@@ -66,8 +66,8 @@ ram.runtime = "50M"
     autoupdate.asset.i386 = "^opencloud-.*-linux-386$"
 
     [resources.sources.draw-io]
-    url = "https://github.com/opencloud-eu/web-extensions/releases/download/draw-io-v2.0.0/draw-io-2.0.0.zip"
-    sha256 = "5af59d60ad244f609bf7fcc08ad07d22103eb94af363f1a3f47d7943f58f3fcd"
+    url = "https://github.com/opencloud-eu/web-extensions/releases/download/draw-io-v2.1.0/draw-io-2.1.0.zip"
+    sha256 = "82f8a1d717c8c77d00ae6db2e843733e99dc7aaa4078a2938556ae30bc788ad2"
     in_subdir = false
     autoupdate.strategy = "latest_github_release"
     autoupdate.upstream = "https://github.com/opencloud-eu/web-extensions"
@@ -75,8 +75,8 @@ ram.runtime = "50M"
     autoupdate.asset = "^draw-io-.*.zip"
 
     [resources.sources.external-sites]
-    url = "https://github.com/opencloud-eu/web-extensions/releases/download/external-sites-v2.0.0/external-sites-2.0.0.zip"
-    sha256 = "80a766fa5cbe933be7f7640da1f81d141211f2c9f29c2c4b803781f923c2a3c9"
+    url = "https://github.com/opencloud-eu/web-extensions/releases/download/external-sites-v2.1.0/external-sites-2.1.0.zip"
+    sha256 = "837dd36571ba010facc4c240f3e4369a6e142c675f20ec4b6657f1eaf241ec03"
     in_subdir = false
     autoupdate.strategy = "latest_github_release"
     autoupdate.upstream = "https://github.com/opencloud-eu/web-extensions"
@@ -84,8 +84,8 @@ ram.runtime = "50M"
     autoupdate.asset = "^external-sites-.*.zip"
 
     [resources.sources.unzip]
-    url = "https://github.com/opencloud-eu/web-extensions/releases/download/unzip-v2.0.1/unzip-2.0.1.zip"
-    sha256 = "ac0671af3bdf175480648ef326b9419c221027b34001cceb39ab77aee616ab7d"
+    url = "https://github.com/opencloud-eu/web-extensions/releases/download/unzip-v2.1.0/unzip-2.1.0.zip"
+    sha256 = "0bc876be618709a4a2a00cf0105287d4a14282c1600af8778eaa87cfabd6dbb6"
     in_subdir = false
     autoupdate.strategy = "latest_github_release"
     autoupdate.upstream = "https://github.com/opencloud-eu/web-extensions"
