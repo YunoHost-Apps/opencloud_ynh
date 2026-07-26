@@ -36,6 +36,11 @@ yunohost service add $app --description="File sharing platform" --log="/var/log/
 # Use logrotate to manage application logfile(s)
 ynh_config_add_logrotate
 
+# Create logfile for friendica and give permissions
+touch "/var/log/$app/$app.log"
+chmod 660 "/var/log/$app/$app.log"
+chown "$app:$app" "/var/log/$app/$app.log"
+
 #=================================================
 # ADD A CONFIGURATION
 #=================================================
