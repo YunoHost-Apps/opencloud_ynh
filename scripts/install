@@ -53,7 +53,7 @@ ynh_script_progression "Installing $app..."
 mkdir -p $data_dir/storage/users/{nodes,uploads,trash,indexes}
 
 pushd "$install_dir"
-	./opencloud init --insecure=true --force-overwrite=true --admin-password=$password --config-path=$data_dir/config/
+	./opencloud init --insecure=false --force-overwrite=true --admin-password=$password --config-path=$data_dir/config/
 popd
 
 chmod 400 "$data_dir/config/opencloud.yaml"
