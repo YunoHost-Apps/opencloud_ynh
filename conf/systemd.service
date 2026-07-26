@@ -8,8 +8,6 @@ Group=__APP__
 EnvironmentFile=__DATA_DIR__/config/opencloud.env
 WorkingDirectory=__INSTALL_DIR__
 ExecStart=__INSTALL_DIR__/opencloud server
-StandardOutput=append:/var/log/__APP__/__APP__.log
-StandardError=inherit
 Restart=always
 RestartSec=5s
 

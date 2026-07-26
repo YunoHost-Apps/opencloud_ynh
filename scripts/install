@@ -59,15 +59,12 @@ popd
 chmod 400 "$data_dir/config/opencloud.yaml"
 chown -R $app:$app "$data_dir"
 
-chown -R "$app:$app" "/var/log/$app" 
-chmod -R 750 "/var/log/$app" 
-
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-ynh_systemctl --action="start" --log_path="/var/log/$app/$app.log"
+ynh_systemctl --action="start" --log_path="systemd"
 
 #=================================================
 # END OF SCRIPT
