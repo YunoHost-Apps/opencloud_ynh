@@ -36,6 +36,9 @@ yunohost service add $app --description="File sharing platform" --log="/var/log/
 # Use logrotate to manage application logfile(s)
 ynh_config_add_logrotate
 
+chown -R "$app:$app" "/var/log/$app" 
+chmod -R 750 "/var/log/$app" 
+
 #=================================================
 # ADD A CONFIGURATION
 #=================================================
