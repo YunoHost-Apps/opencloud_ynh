@@ -53,7 +53,7 @@ ynh_script_progression "Installing $app..."
 mkdir -p $data_dir/storage/users/{nodes,uploads,trash,indexes}
 
 pushd "$install_dir"
-	./opencloud init --insecure=false --admin-password=$password --config-path=$data_dir/config/ #--force-overwrite=true
+	./opencloud init --force-overwrite=true --insecure=true --admin-password=$password --config-path=$data_dir/config/
 popd
 
 chmod 400 "$data_dir/config/opencloud.yaml"
@@ -64,7 +64,7 @@ chown -R $app:$app "$data_dir"
 #=================================================
 ynh_script_progression "Starting $app's systemd service..."
 
-ynh_systemctl --action="start" --log_path="systemd"
+ynh_systemctl --action="start"
 
 #=================================================
 # END OF SCRIPT
