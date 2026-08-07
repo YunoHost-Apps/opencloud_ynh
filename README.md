@@ -20,7 +20,7 @@ Online storage, file sharing platform
 
 
 ## Screenshots
-![Screenshot of OpenCloud](./doc/screenshots/screenshot.png)
+![Screenshot of OpenCloud](./doc/screenshots/opencloud.png)
 
 ## 📦 Developer info
 
