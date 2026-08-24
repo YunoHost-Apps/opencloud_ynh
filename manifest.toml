@@ -5,7 +5,7 @@ name = "OpenCloud"
 description.en = "Online storage, file sharing platform"
 description.fr = "Stockage en ligne, plateforme de partage de fichiers"
 
-version = "7.4.0~ynh1"
+version = "7.4.0~ynh2"
 
 maintainers = ["eric_G"]
 
@@ -66,8 +66,8 @@ ram.runtime = "50M"
     autoupdate.asset.i386 = "^opencloud-.*-linux-386$"
 
     [resources.sources.draw-io]
-    url = "https://github.com/opencloud-eu/web-extensions/releases/download/draw-io-v2.1.0/draw-io-2.1.0.zip"
-    sha256 = "82f8a1d717c8c77d00ae6db2e843733e99dc7aaa4078a2938556ae30bc788ad2"
+    url = "https://github.com/opencloud-eu/web-extensions/releases/download/draw-io-v2.2.0/draw-io-2.2.0.zip"
+    sha256 = "49c3aa32aa517f2a90f249b5470b38dc18b7d006841c442f64335d660b551d0c"
     in_subdir = false
     autoupdate.strategy = "latest_github_release"
     autoupdate.upstream = "https://github.com/opencloud-eu/web-extensions"
