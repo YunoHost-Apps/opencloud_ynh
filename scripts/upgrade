@@ -19,6 +19,11 @@ ynh_script_progression "Upgrading source files..."
 
 ynh_setup_source --dest_dir="$install_dir" --full_replace --keep=".opencloud apps"
 
+if [ ! -f "$data_dir/config/opencloud.local.env" ]; then
+ynh_config_add --template="local.env" --destination="$data_dir/config/opencloud.local.env"
+fi
+
+
 ynh_setup_source --dest_dir="$install_dir/apps" --source_id="external-sites" --keep="apps/external-sites/manifest.json"
 ynh_setup_source --dest_dir="$install_dir/apps" --source_id="draw-io"
 ynh_setup_source --dest_dir="$install_dir/apps" --source_id="unzip"
