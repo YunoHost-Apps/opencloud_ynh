@@ -1,0 +1,23 @@
+version = "1.0"
+
+[main]
+name.en = "Opencloud configuration"
+name.fr = "Configuration d'Opencloud'"
+
+    [main.collabora]
+    name = "Collabora"
+
+        [main.collabora.collabora_domain]
+        ask.en = "Collabora server URL"
+        ask.fr = "URL du serveur Collabora"
+        type = "text"
+        example = "https://collabora.example.com"
+        bind = "COLLABORATION_APP_ADDR:__DATA_DIR__/config/opencloud.local.env"
+    
+        [main.collabora.wopi_domain]
+        ask.en = "Wopi URL"
+        ask.fr = "URL du server Wopi"
+        type = "text"
+        example = "https://wopi.example.com"
+        bind = "COLLABORATION_WOPI_SRC:__DATA_DIR__/config/opencloud.local.env"
+    
