@@ -5,7 +5,7 @@ name = "OpenCloud"
 description.en = "Online storage, file sharing platform"
 description.fr = "Stockage en ligne, plateforme de partage de fichiers"
 
-version = "5.1.0~ynh2"
+version = "7.5.0~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -15,7 +15,7 @@ website = "https://opencloud.eu/en"
 code = "https://github.com/opencloud-eu/opencloud"
 
 [integration]
-yunohost = ">= 12.1.38"
+yunohost = ">= 12.1.40"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = false
@@ -50,14 +50,14 @@ ram.runtime = "50M"
     [resources.sources.main]
     extract = false
     rename = "opencloud"
-    amd64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v5.1.0/opencloud-5.1.0-linux-amd64"
-    amd64.sha256 = "6771214f48687e69e6e6e5b8c969ee8746e9573502af95e3c52881a5c9b789fd"
-    arm64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v5.1.0/opencloud-5.1.0-linux-arm64"
-    arm64.sha256 = "341ed6c18c7e636da43adc4ec13e9315c71bed8fb2a3e4f5c05f816572ec9c61"
-    armhf.url = "https://github.com/opencloud-eu/opencloud/releases/download/v5.1.0/opencloud-5.1.0-linux-arm"
-    armhf.sha256 = "ce291b6ee60db74fc8d76628346954bfe1427fc8a830c02d33834c798538f9cc"
-    i386.url = "https://github.com/opencloud-eu/opencloud/releases/download/v5.1.0/opencloud-5.1.0-linux-386"
-    i386.sha256 = "6c7d7ed91339a94dc831a3e9a7ada53b91b2122e549aa0caa33f801eb87e2666"
+    amd64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v7.5.0/opencloud-7.5.0-linux-amd64"
+    amd64.sha256 = "27d54e772b0fdbca148daa32b11ffb205b20174e4e934aebb5dfb7bef986f5f9"
+    arm64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v7.5.0/opencloud-7.5.0-linux-arm64"
+    arm64.sha256 = "ffff43d70416e64ac2bd00066cd2901da3dcc27d9454c4e70e05790b7b822831"
+    armhf.url = "https://github.com/opencloud-eu/opencloud/releases/download/v7.5.0/opencloud-7.5.0-linux-arm"
+    armhf.sha256 = "96e88fa1fc93bf101ce7ec12fa8ffc3f316fdd13f0bda0032f80bf2d4cf64a8e"
+    i386.url = "https://github.com/opencloud-eu/opencloud/releases/download/v7.5.0/opencloud-7.5.0-linux-386"
+    i386.sha256 = "10129baf71b59a18ab6473ce045a089bd872b873b4c2fc8bcdf8f1ee9a6e2ec6"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = "^opencloud-.*-linux-amd64$"
@@ -66,8 +66,8 @@ ram.runtime = "50M"
     autoupdate.asset.i386 = "^opencloud-.*-linux-386$"
 
     [resources.sources.draw-io]
-    url = "https://github.com/opencloud-eu/web-extensions/releases/download/draw-io-v1.0.1/draw-io-1.0.1.zip"
-    sha256 = "afc556426202fe6d48a6d9152cce24f3343bff5919e653df7aa8eb749991e5a2"
+    url = "https://github.com/opencloud-eu/web-extensions/releases/download/draw-io-v2.2.0/draw-io-2.2.0.zip"
+    sha256 = "49c3aa32aa517f2a90f249b5470b38dc18b7d006841c442f64335d660b551d0c"
     in_subdir = false
     autoupdate.strategy = "latest_github_release"
     autoupdate.upstream = "https://github.com/opencloud-eu/web-extensions"
@@ -75,8 +75,8 @@ ram.runtime = "50M"
     autoupdate.asset = "^draw-io-.*.zip"
 
     [resources.sources.external-sites]
-    url = "https://github.com/opencloud-eu/web-extensions/releases/download/external-sites-v1.3.0/external-sites-1.3.0.zip"
-    sha256 = "1a1b7e38a6ce7099004dd0b0ad006fb337b5cd37950633a7cb667cbc60c4c2c5"
+    url = "https://github.com/opencloud-eu/web-extensions/releases/download/external-sites-v2.1.0/external-sites-2.1.0.zip"
+    sha256 = "837dd36571ba010facc4c240f3e4369a6e142c675f20ec4b6657f1eaf241ec03"
     in_subdir = false
     autoupdate.strategy = "latest_github_release"
     autoupdate.upstream = "https://github.com/opencloud-eu/web-extensions"
@@ -84,8 +84,8 @@ ram.runtime = "50M"
     autoupdate.asset = "^external-sites-.*.zip"
 
     [resources.sources.unzip]
-    url = "https://github.com/opencloud-eu/web-extensions/releases/download/unzip-v1.0.4/unzip-1.0.4.zip"
-    sha256 = "f0ad50d8e5173f30d708d3f0c0854ea34245a967ddfd40e0dcb1b85834e8a304"
+    url = "https://github.com/opencloud-eu/web-extensions/releases/download/unzip-v2.1.0/unzip-2.1.0.zip"
+    sha256 = "0bc876be618709a4a2a00cf0105287d4a14282c1600af8778eaa87cfabd6dbb6"
     in_subdir = false
     autoupdate.strategy = "latest_github_release"
     autoupdate.upstream = "https://github.com/opencloud-eu/web-extensions"
