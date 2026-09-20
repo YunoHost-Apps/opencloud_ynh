@@ -7,3 +7,9 @@ test_format = 1.0
     # ------------
 
     exclude = ["install.subdir", "install.multi"]
+
+    # -------------------------------
+    # Commits to test upgrade from
+    # -------------------------------
+
+    test_upgrade_from.35f10e1c9a28cfe2e4becf042923fdf82e1b605b.name = "Upgrade from 8.0.1"
