@@ -58,9 +58,9 @@ ynh_script_progression "Starting $app's systemd service..."
 if ynh_app_upgrading_from_version_before 8.0.1~ynh3; then
 ynh_systemctl --action="start" --wait_until="http server listening at http://127.0.0.1" --log_path="/var/log/$app/$app.log"
 	ynh_exec_as_app bash -c "
-#		set -a
-#		source '$data_dir/config/opencloud.env'
-#		set +a
+		set -a
+		source '$data_dir/config/opencloud.env'
+		set +a
 		cd '$install_dir'
 		./opencloud search index --all-spaces --force-rescan --insecure
 	"
