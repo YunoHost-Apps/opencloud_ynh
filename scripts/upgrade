@@ -49,9 +49,9 @@ ynh_script_progression "Adding $app's configuration..."
 
 ynh_config_add --template=".env" --destination="$data_dir/config/opencloud.env"
 
-# upgrade 7 to 8 (sudo -u $app as a temporary workaround cf issue #80)
+# upgrade 7 to 8 
 if ynh_app_upgrading_from_version_before 8.0.1~ynh1; then
-	sudo -u $app /bin/bash -c "
+	ynh_exec_as_app bash -c "
 		set -a
 		source '$data_dir/config/opencloud.env'
 		set +a
