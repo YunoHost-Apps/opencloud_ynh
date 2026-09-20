@@ -49,6 +49,11 @@ ynh_script_progression "Adding $app's configuration..."
 
 ynh_config_add --template=".env" --destination="$data_dir/config/opencloud.env"
 
+# upgrade 7 to 8
+if ynh_app_upgrading_from_version_before 8.0.1~ynh1; then
+ynh_exec_as_app env --file="$data_dir/config/opencloud.env" "$install_dir/opencloud" search index --all-spaces --force-rescan --insecure
+fi
+
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
