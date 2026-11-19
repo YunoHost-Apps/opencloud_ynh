@@ -5,7 +5,7 @@ name = "OpenCloud"
 description.en = "Online storage, file sharing platform"
 description.fr = "Stockage en ligne, plateforme de partage de fichiers"
 
-version = "9.1.1~ynh1"
+version = "9.2.0~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -50,14 +50,14 @@ ram.runtime = "50M"
     [resources.sources.main]
     extract = false
     rename = "opencloud"
-    amd64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v9.1.1/opencloud-9.1.1-linux-amd64"
-    amd64.sha256 = "13af2fdcb5639d7713ebbaf42250530808e6dff3fcc5d4db7923b9b2449d189c"
-    arm64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v9.1.1/opencloud-9.1.1-linux-arm64"
-    arm64.sha256 = "eec43f782a6308a9c46bd19bd25f35188253d3bbeee38b228a7029f74753c067"
-    armhf.url = "https://github.com/opencloud-eu/opencloud/releases/download/v9.1.1/opencloud-9.1.1-linux-arm"
-    armhf.sha256 = "cc88d99a79611ca0a8fc9b207f22d1f6a3c63219a233893f138c520874c139e1"
-    i386.url = "https://github.com/opencloud-eu/opencloud/releases/download/v9.1.1/opencloud-9.1.1-linux-386"
-    i386.sha256 = "68da08f843ce4ee9e08e2c54531eef235e1e270dbc88c5c71a722e2927d54fc5"
+    amd64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v9.2.0/opencloud-9.2.0-linux-amd64"
+    amd64.sha256 = "6dd961024170b77838b9c61f0b03767fe9bf27d4ba8265d6537cb2e6a228b9be"
+    arm64.url = "https://github.com/opencloud-eu/opencloud/releases/download/v9.2.0/opencloud-9.2.0-linux-arm64"
+    arm64.sha256 = "f0778e22f05dae50bfdb6ec50ce6561676387a0947b0cb5a6eb21d8926e98db8"
+    armhf.url = "https://github.com/opencloud-eu/opencloud/releases/download/v9.2.0/opencloud-9.2.0-linux-arm"
+    armhf.sha256 = "92f7abc80ffcbf16b17fd8cd0fdd0fbcf0564fb7e81af8f37a9178df4b8fa61e"
+    i386.url = "https://github.com/opencloud-eu/opencloud/releases/download/v9.2.0/opencloud-9.2.0-linux-386"
+    i386.sha256 = "6f1a0fd2f7c46bc692d7a6cbe61ab0abbe993ccf33e669a69be3d64b597e1890"
 
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset.amd64 = "^opencloud-.*-linux-amd64$"
@@ -66,8 +66,8 @@ ram.runtime = "50M"
     autoupdate.asset.i386 = "^opencloud-.*-linux-386$"
 
     [resources.sources.draw-io]
-    url = "https://github.com/opencloud-eu/web-extensions/releases/download/draw-io-v2.2.0/draw-io-2.2.0.zip"
-    sha256 = "49c3aa32aa517f2a90f249b5470b38dc18b7d006841c442f64335d660b551d0c"
+    url = "https://github.com/opencloud-eu/web-extensions/releases/download/draw-io-v2.2.1/draw-io-2.2.1.zip"
+    sha256 = "140f272c992adf76dccdcbddcd225d634be53f5ac9ed90eabe0a3e45f43fa7a1"
     in_subdir = false
     autoupdate.strategy = "latest_github_release"
     autoupdate.upstream = "https://github.com/opencloud-eu/web-extensions"
@@ -84,8 +84,8 @@ ram.runtime = "50M"
     autoupdate.asset = "^external-sites-.*.zip"
 
     [resources.sources.unzip]
-    url = "https://github.com/opencloud-eu/web-extensions/releases/download/unzip-v2.2.1/unzip-2.2.1.zip"
-    sha256 = "d50bd229f27b8263de905dbf524e1a550ca85701d58cb9f4c193e6db9b1ef0cc"
+    url = "https://github.com/opencloud-eu/web-extensions/releases/download/unzip-v2.2.2/unzip-2.2.2.zip"
+    sha256 = "1391f909e04c4dd7db629dac8ba89eef4fad63fcd2e18fad0b06f93589a35647"
     in_subdir = false
     autoupdate.strategy = "latest_github_release"
     autoupdate.upstream = "https://github.com/opencloud-eu/web-extensions"
