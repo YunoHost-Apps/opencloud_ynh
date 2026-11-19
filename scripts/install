@@ -10,6 +10,9 @@ source /usr/share/yunohost/helpers
 ynh_app_setting_set --key=password --value=$password
 ynh_app_setting_set --key=protect_against_basic_auth_spoofing --value=False
 
+jwt_secret=$(ynh_string_random --length=48)
+ynh_app_setting_set --key=jwt_secret --value="$jwt_secret"
+
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
